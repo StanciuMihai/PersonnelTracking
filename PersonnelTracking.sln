@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonnelTracking", "PersonnelTracking\PersonnelTracking.csproj", "{E06E23A5-1B7E-435C-8D4B-20DDA0BE0EA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{45E302DF-1056-412A-AE2E-2B6609268108}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{A4C44DA5-D04F-49B2-87C0-D6A1A6F76490}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E06E23A5-1B7E-435C-8D4B-20DDA0BE0EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E06E23A5-1B7E-435C-8D4B-20DDA0BE0EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E06E23A5-1B7E-435C-8D4B-20DDA0BE0EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E06E23A5-1B7E-435C-8D4B-20DDA0BE0EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45E302DF-1056-412A-AE2E-2B6609268108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E302DF-1056-412A-AE2E-2B6609268108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E302DF-1056-412A-AE2E-2B6609268108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E302DF-1056-412A-AE2E-2B6609268108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4C44DA5-D04F-49B2-87C0-D6A1A6F76490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4C44DA5-D04F-49B2-87C0-D6A1A6F76490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4C44DA5-D04F-49B2-87C0-D6A1A6F76490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4C44DA5-D04F-49B2-87C0-D6A1A6F76490}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F04267F1-FE57-474C-A476-4C204FF6124F}
+	EndGlobalSection
+EndGlobal
