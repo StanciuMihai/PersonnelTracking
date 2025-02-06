@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PersonnelTracking
 {
-    public partial class FrmEmployeeList : Form
+    public partial class FrmTaskList : Form
     {
-        public FrmEmployeeList()
+        public FrmTaskList()
         {
             InitializeComponent();
         }
@@ -22,14 +22,14 @@ namespace PersonnelTracking
             e.Handled = General.isNumber(e);
         }
 
-        private void txtName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FrmTaskList_Load(object sender, EventArgs e)
+        {
+            pnlForAdmin.Hide();
         }
     }
 }

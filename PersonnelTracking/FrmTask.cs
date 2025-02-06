@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace PersonnelTracking
 {
-    public partial class FrmEmployeeList : Form
+    public partial class FrmTask : Form
     {
-        public FrmEmployeeList()
+        public FrmTask()
         {
             InitializeComponent();
         }
 
-        private void txtUserNo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = General.isNumber(e);
-        }
-
-        private void txtName_TextChanged(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

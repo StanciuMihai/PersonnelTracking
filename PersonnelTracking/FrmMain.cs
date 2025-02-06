@@ -21,5 +21,10 @@ namespace PersonnelTracking
         {
             Application.Exit();
         }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

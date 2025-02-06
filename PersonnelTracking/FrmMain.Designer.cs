@@ -167,6 +167,7 @@ namespace PersonnelTracking
             this.Controls.Add(this.btnEmployee);
             this.Name = "FrmMain";
             this.Text = "Employee Tracking";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.ResumeLayout(false);
 
         }
