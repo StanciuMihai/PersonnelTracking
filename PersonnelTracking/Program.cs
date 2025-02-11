@@ -16,7 +16,7 @@ namespace PersonnelTracking
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmTaskList());
+            Application.Run(new FrmLogin());
         }
     }
 }
