@@ -30,12 +30,13 @@ namespace PersonnelTracking
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCheck = new System.Windows.Forms.Button();
+            this.chAdmin = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtUserNo = new System.Windows.Forms.TextBox();
             this.btnBrowse = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.chAdmin = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtSurname = new System.Windows.Forms.TextBox();
@@ -52,11 +53,10 @@ namespace PersonnelTracking
             this.lblDepartment = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.btnCheck = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +74,46 @@ namespace PersonnelTracking
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(815, 88);
             this.panel1.TabIndex = 0;
+            // 
+            // btnCheck
+            // 
+            this.btnCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheck.Location = new System.Drawing.Point(296, 9);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(101, 26);
+            this.btnCheck.TabIndex = 1;
+            this.btnCheck.Text = "Check";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
+            // 
+            // chAdmin
+            // 
+            this.chAdmin.AutoSize = true;
+            this.chAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chAdmin.Location = new System.Drawing.Point(705, 14);
+            this.chAdmin.Name = "chAdmin";
+            this.chAdmin.Size = new System.Drawing.Size(106, 24);
+            this.chAdmin.TabIndex = 3;
+            this.chAdmin.Text = "is Admin?";
+            this.chAdmin.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(403, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Password";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(495, 9);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(203, 26);
+            this.txtPassword.TabIndex = 2;
             // 
             // label1
             // 
@@ -97,41 +137,13 @@ namespace PersonnelTracking
             // btnBrowse
             // 
             this.btnBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrowse.Location = new System.Drawing.Point(352, 186);
+            this.btnBrowse.Location = new System.Drawing.Point(388, 186);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(101, 26);
             this.btnBrowse.TabIndex = 3;
             this.btnBrowse.Text = "Browse";
             this.btnBrowse.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(403, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 20);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Password";
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(495, 9);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(203, 26);
-            this.txtPassword.TabIndex = 2;
-            // 
-            // chAdmin
-            // 
-            this.chAdmin.AutoSize = true;
-            this.chAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chAdmin.Location = new System.Drawing.Point(705, 14);
-            this.chAdmin.Name = "chAdmin";
-            this.chAdmin.Size = new System.Drawing.Size(106, 24);
-            this.chAdmin.TabIndex = 3;
-            this.chAdmin.Text = "is Admin?";
-            this.chAdmin.UseVisualStyleBackColor = true;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // label3
             // 
@@ -245,6 +257,7 @@ namespace PersonnelTracking
             this.cmbDepartment.Name = "cmbDepartment";
             this.cmbDepartment.Size = new System.Drawing.Size(203, 28);
             this.cmbDepartment.TabIndex = 5;
+            this.cmbDepartment.SelectedIndexChanged += new System.EventHandler(this.cmbDepartment_SelectedIndexChanged);
             // 
             // lblDepartment
             // 
@@ -273,14 +286,14 @@ namespace PersonnelTracking
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 7;
             // 
-            // textBox1
+            // txtAddress
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(143, 356);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(555, 82);
-            this.textBox1.TabIndex = 8;
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(143, 356);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(555, 82);
+            this.txtAddress.TabIndex = 8;
             // 
             // label9
             // 
@@ -288,9 +301,9 @@ namespace PersonnelTracking
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(15, 359);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(43, 20);
+            this.label9.Size = new System.Drawing.Size(75, 20);
             this.label9.TabIndex = 7;
-            this.label9.Text = "Text";
+            this.label9.Text = "Address";
             // 
             // btnClose
             // 
@@ -312,16 +325,7 @@ namespace PersonnelTracking
             this.btnSave.TabIndex = 9;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
-            // 
-            // btnCheck
-            // 
-            this.btnCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheck.Location = new System.Drawing.Point(296, 9);
-            this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(101, 26);
-            this.btnCheck.TabIndex = 1;
-            this.btnCheck.Text = "Check";
-            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // FrmEmployee
             // 
@@ -346,12 +350,13 @@ namespace PersonnelTracking
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtSalary);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.panel1);
             this.Name = "FrmEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee";
+            this.Load += new System.EventHandler(this.FrmEmployee_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -385,7 +390,7 @@ namespace PersonnelTracking
         private System.Windows.Forms.Label lblDepartment;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnSave;
