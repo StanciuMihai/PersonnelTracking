@@ -89,8 +89,6 @@ namespace PersonnelTracking
             {
                 cmbPosition.DataSource = dto.Positions.Where(x => x.DepartmentId ==
                 Convert.ToInt32(cmbDepartment.SelectedValue)).ToList();
-
-
             }
         }
 
