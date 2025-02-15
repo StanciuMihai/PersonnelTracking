@@ -52,6 +52,7 @@ namespace PersonnelTracking
             dataGridView1.Columns[11].Visible = false;
             dataGridView1.Columns[12].Visible = false;
             dataGridView1.Columns[13].Visible = false;
+
             combofull = false;
             cmbDepartment.DataSource = dto.Departments;
             cmbDepartment.DisplayMember = "DepartmentName";
